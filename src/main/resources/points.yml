@@ -1,0 +1,50 @@
+# Настройка очков (Points)
+# Вы можете указать сколько очков дается за каждый предмет
+# Если предмета нет в списке, берется значение по умолчанию
+
+settings:
+  # Максимальное количество очков, которое игрок может заработать за один раз (анти-абьюз)
+  max-points-per-transaction: 1000.0
+  # Глобальный множитель очков (если нужно быстро изменить баланс)
+  global-multiplier: 1.0
+
+# Настройка очков за конкретные предметы
+# Формат: МАТЕРИАЛ: количество_очков
+items:
+  # Руды и ценности
+  DIAMOND: 5.0
+  EMERALD: 7.0
+  NETHERITE_INGOT: 25.0
+  GOLD_INGOT: 2.5
+  IRON_INGOT: 1.8
+  COAL: 0.5
+  LAPIS_LAZULI: 1.0
+  QUARTZ: 1.2
+  ANCIENT_DEBRIS: 20.0
+  
+  # Блоки
+  OBSIDIAN: 3.0
+  CRYING_OBSIDIAN: 5.0
+  GLOWSTONE: 1.5
+  SEA_LANTERN: 2.0
+  PRISMARINE: 1.0
+  
+  # Фермерство и еда
+  COOKED_BEEF: 0.8
+  GOLDEN_APPLE: 10.0
+  ENCHANTED_GOLDEN_APPLE: 75.0
+  CHORUS_FRUIT: 2.0
+  GHAST_TEAR: 15.0
+  BLAZE_ROD: 4.0
+  ENDER_PEARL: 3.0
+  
+  # Редкое
+  DRAGON_EGG: 500.0
+  NETHER_STAR: 150.0
+  TOTEM_OF_UNDYING: 40.0
+  ELYTRA: 100.0
+
+# Настройка по умолчанию, если предмета нет в списке выше
+# Очки рассчитываются как: (цена предмета) * (этот коэффициент)
+default:
+  ratio-per-money: 0.05

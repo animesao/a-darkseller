@@ -1,0 +1,129 @@
+# Конфигурация всех меню плагина DarkSeller
+
+main_menu:
+  title: "#00FF00Скупщик предметов"
+  size: 54
+  items:
+    info:
+      slot: 45
+      material: COOKED_BEEF
+      name: "#FFAA00Информация"
+      lore:
+        - ""
+        - "#FFFFAAВы можете обменивать предметы на монеты"
+        - "#FFFFAAБолее ценные предметы стоят больше"
+        - ""
+        - "#FFD700━━━ Прогрессия мира ━━━"
+        - "#FFFF00Множитель за вайп: #00FF00x%wipe_multiplier%"
+        - "#FFFF00Статус: %wipe_status%"
+        - "#AAAAAAДо следующего уровня: #FFFFFF%wipe_next_increase%"
+        - ""
+      multiplier_format:
+        - "#FFD700━━━ Множитель прибыли ━━━"
+        - "#00FF00Уровень: #FFFF00%level%"
+        - "#00FF00Множитель: #FFFF00x%multiplier%"
+        - "#00FF00Прогресс: #FFFF00%sold%/%required% предметов"
+        - "#00FF00Осталось: #FFFF00%needed% шт."
+      multiplier_max:
+        - "#FFD700━━━ Множитель прибыли ━━━"
+        - "#00FF00Уровень: #FFFF00%level%"
+        - "#00FF00Множитель: #FFFF00x%multiplier%"
+        - "#FFFF00Максимальный уровень достигнут!"
+    boosters:
+      slot: 51
+      material: GOLD_INGOT
+      name: "#FFD700Бустеры прибыли"
+      lore:
+        - ""
+        - "#FFAAAAПросмотрите ваши"
+        - "#FFAAAAактивные множители!"
+        - ""
+    catalog:
+      slot: 48
+      material: WRITABLE_BOOK
+      name: "#FF0000Ассортимент"
+      lore:
+        - ""
+        - "#FFAAAAПосмотрите что скупает"
+        - "#FFAAAAТорговец и по какой цене!"
+        - ""
+    shop:
+      slot: 49
+      material: LODESTONE
+      name: "#FFD700Магазин Скупщика"
+      lore:
+        - ""
+        - "#00FF00Ваши очки: #FFFF00%points%"
+        - ""
+        - "#FFFFAAНажмите, чтобы открыть магазин"
+    sell:
+      slot: 53
+      material: LIME_DYE
+      name: "#00FF00► Нажмите, чтобы сдать все предметы"
+      lore:
+        - "#00FF00и получить монеты за предметы"
+  decoration:
+    - material: ORANGE_STAINED_GLASS_PANE
+      slots: [36, 37, 38, 39, 40, 41, 42, 43, 44]
+      name: " "
+    - material: GRAY_STAINED_GLASS_PANE
+      slots: [45, 47, 50, 52, 46]
+      name: " "
+
+catalog_menu:
+  title: "#FF0000Ассортимент"
+  size: 54
+  items_per_page: 45
+  items: {}
+  back_button:
+    slot: 49
+    material: BARRIER
+    name: "#FF0000Назад"
+  item_display:
+    name: "#00FFFF%name%"
+    lore:
+      - "#FFFF00Ваша цена: #00FF00%price% монет"
+      - "#FFFF00Стоимость: #00FF00%points% очков"
+      - "#AAAAAAЛимит: #FFFFFF%stock%/%limit%"
+      - ""
+      - "#555555ID: minecraft:%id%"
+  decoration:
+    - material: LIGHT_BLUE_STAINED_GLASS_PANE
+      slots: [45, 47, 48, 50, 51, 52, 53]
+      name: " "
+
+categories_menu:
+  title: "#FF0000Выбор категории"
+  size: 54
+  items:
+    auto_sell:
+      slot: 49
+      material: NETHER_STAR
+      name: "#FFFFFFАвто-скупщик"
+      lore:
+        - ""
+        - "#FFAAAAАвтоматическая продажа предметов"
+        - "#FFAAAAиз инвентаря через заданный интервал"
+  decoration:
+    - material: GRAY_STAINED_GLASS_PANE
+      slots: [45, 47, 48, 49, 50, 52, 53]
+      name: " "
+
+autosell_menu:
+  title: "#FFD700Настройки авто-продажи"
+  size: 54
+  toggle_button:
+    slot: 4
+  select_all:
+    slot: 21
+    material: EMERALD_BLOCK
+    name: "#00FF00Выбрать все"
+  deselect_all:
+    slot: 23
+    material: REDSTONE_BLOCK
+    name: "#FF0000Снять все"
+  back_button:
+    slot: 49
+    material: BARRIER
+    name: "#FF0000Назад"
+  item_slots: [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]

@@ -1,0 +1,83 @@
+# Настройки таймера бустера в Action Bar
+timer:
+  # Сообщение таймера (%multiplier% - множитель, %time% - время)
+  format: "#FFD700Активный бустер: #FFFFFFx%multiplier% #777777(%time%)"
+  # Интервал обновления сообщения в секундах (рекомендуется 10)
+  update_interval: 120
+  # Сообщение по окончанию бустера
+  finish_message: "#FF5555Ваш временный бустер закончился!"
+
+# Конфигурация бустеров
+gui:
+  title: "#FFD700Магазин Бустеров"
+  size: 54
+  decoration:
+    - material: GRAY_STAINED_GLASS_PANE
+      slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 45, 46, 47, 48, 50, 51, 52, 53]
+      name: " "
+  back_button:
+    slot: 49
+    material: BARRIER
+    name: "#FF0000Назад"
+
+# Валюта для покупки бустеров (кастомный предмет)
+currency:
+  material: NETHER_STAR
+  name: "#FF5555Боевой осколок"
+  lore:
+    - "&7Редкий артефакт для"
+    - "&7покупки усилителей прибыли"
+
+# Список доступных бустеров
+boosters:
+  booster_1:
+    slot: 20
+    name: "#FFFF00Младший Бустер"
+    multiplier: 1.2
+    duration_minutes: 60
+    cost: 5
+    permission: "buyer.booster.low"
+    material: GOLD_NUGGET
+    lore:
+      - "&7Увеличивает прибыль в &a1.2x"
+      - "&7Длительность: &e60 мин."
+      - "&7Стоимость: &c5 осколков"
+  
+  booster_2:
+    slot: 22
+    name: "#FFAA00Средний Бустер"
+    multiplier: 1.5
+    duration_minutes: 120
+    cost: 15
+    permission: "buyer.booster.medium"
+    material: GOLD_INGOT
+    lore:
+      - "&7Увеличивает прибыль в &a1.5x"
+      - "&7Длительность: &e120 мин."
+      - "&7Стоимость: &c15 осколков"
+
+  booster_4:
+    slot: 24
+    name: "#FF55FFМесячный Усилитель"
+    multiplier: 2.5
+    duration_days: 30
+    cost: 100
+    permission: "buyer.booster.monthly"
+    material: NETHER_STAR
+    lore:
+      - "&7Увеличивает прибыль в &a2.5x"
+      - "&7Длительность: &e30 дней"
+      - "&7Стоимость: &c100 осколков"
+
+  booster_permanent:
+    slot: 31
+    name: "#FF0000Вечный Усилитель"
+    multiplier: 3.0
+    duration_minutes: -1
+    cost: 500
+    permission: "buyer.booster.permanent"
+    material: NETHERITE_INGOT
+    lore:
+      - "&7Увеличивает прибыль в &a3.0x"
+      - "&7Длительность: #FF0000До конца вайпа"
+      - "&7Стоимость: &c500 осколков"

@@ -1,0 +1,859 @@
+
+# Настройки базы данных
+database:
+  # Тип базы данных: "sqlite" или "mysql"
+  type: "sqlite"
+  
+  # Настройки MySQL (используются только если type: "mysql")
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "buyer"
+    username: "root"
+    password: ""
+    use-ssl: false
+
+# Настройки очков скупщика
+points:
+  # Настройка по умолчанию: сколько очков давать за 1 монету прибыли
+  default-per-money: 0.1 
+  # Индивидуальные настройки для предметов (если предмета нет в списке, берется default-per-money)
+  # Настройка идет в формате: ПРЕДМЕТ: множитель
+  # Например, DIAMOND: 0.2 будет давать 0.2 очка за 1 монету от продажи алмаза
+  per-item:
+    DIAMOND: 0.2
+    EMERALD: 0.2
+    NETHERITE_INGOT: 0.5
+    NETHERITE_SCRAP: 0.3
+    GOLD_INGOT: 0.15
+    IRON_INGOT: 0.1
+    COAL: 0.05
+    REDSTONE: 0.1
+    LAPIS_LAZULI: 0.1
+    QUARTZ: 0.1
+    GLOWSTONE_DUST: 0.1
+    GUNPOWDER: 0.15
+    WHEAT: 0.05
+    CARROT: 0.05
+    POTATO: 0.05
+    BEETROOT: 0.05
+    APPLE: 0.1
+    MELON_SLICE: 0.05
+    PUMPKIN: 0.1
+    SUGAR_CANE: 0.05
+    CACTUS: 0.05
+    BAMBOO: 0.05
+    KELP: 0.05
+    SEA_PICKLE: 0.1
+    SWEET_BERRIES: 0.05
+    COCOA_BEANS: 0.1
+    BROWN_MUSHROOM: 0.1
+    RED_MUSHROOM: 0.1
+    NETHER_WART: 0.15
+    POISONOUS_POTATO: 0.1
+    ROTTEN_FLESH: 0.05
+    SPIDER_EYE: 0.1
+    FERMENTED_SPIDER_EYE: 0.15
+    BONE: 0.1
+    GUNPOWDER: 0.15
+    ENDER_PEARL: 0.25
+    SLIME_BALL: 0.15
+    MAGMA_CREAM: 0.15
+    BLAZE_ROD: 0.2
+    GHAST_TEAR: 0.3
+    SHULKER_SHELL: 0.5
+    DRAGON_BREATH: 0.4
+    PHANTOM_MEMBRANE: 0.2
+    SCUTE: 0.2
+    RABBIT_FOOT: 0.2
+    SPYGLASS: 40.0
+    ECHO_SHARD: 50.0
+    BEEF: 0.1
+    PORKCHOP: 0.1
+    CHICKEN: 0.1
+    MUTTON: 0.1
+    RABBIT: 0.1
+    COOKED_BEEF: 0.15
+    COOKED_PORKCHOP: 0.15
+    COOKED_CHICKEN: 0.15
+    COOKED_MUTTON: 0.15
+    COOKED_RABBIT: 0.15
+    COD: 0.1
+    SALMON: 0.1
+    TROPICAL_FISH: 0.15
+    PUFFERFISH: 0.1
+    COOKED_COD: 0.15
+    COOKED_SALMON: 0.15
+    LEATHER: 0.15
+    FEATHER: 0.05
+    STRING: 0.05
+    WOOL: 0.05
+    BONE: 0.1
+    RABBIT_HIDE: 0.1
+    RABBIT_FOOT: 0.2
+    EGG: 0.05
+    INK_SAC: 0.1
+    BLAZE_ROD: 0.2
+    BLAZE_POWDER: 0.15
+    ENDER_PEARL: 0.25
+    GHAST_TEAR: 0.3
+    NETHER_STAR: 1.0
+    MAGMA_CREAM: 0.15
+    SLIME_BALL: 0.15
+    SPIDER_EYE: 0.1
+    FERMENTED_SPIDER_EYE: 0.15
+    PHANTOM_MEMBRANE: 0.2
+    OAK_LOG: 0.05
+    SPRUCE_LOG: 0.05
+    BIRCH_LOG: 0.05
+    JUNGLE_LOG: 0.05
+    ACACIA_LOG: 0.05
+    DARK_OAK_LOG: 0.05
+    CRIMSON_STEM: 0.1
+    WARPED_STEM: 0.1
+    IRON_ORE: 0.2
+    GOLD_ORE: 0.3
+    DIAMOND_ORE: 0.5
+    COAL_ORE: 0.1
+    REDSTONE_ORE: 0.15
+    LAPIS_ORE: 0.2
+    EMERALD_ORE: 0.4
+    NETHER_QUARTZ_ORE: 0.1
+    NETHER_GOLD_ORE: 0.2
+    ANCIENT_DEBRIS: 0.6
+    CRIMSON_FUNGUS: 0.1
+    WARPED_FUNGUS: 0.1
+    CRIMSON_ROOTS: 0.05
+    WARPED_ROOTS: 0.05
+    SHROOMLIGHT: 0.15
+    WARPED_WART_BLOCK: 0.1
+    PRISMARINE_SHARD: 0.15
+    PRISMARINE_CRYSTALS: 0.2
+    NAUTILUS_SHELL: 0.25
+    SCUTE: 0.2
+    HEART_OF_THE_SEA: 0.5
+    HONEYCOMB: 0.15
+    HONEY_BOTTLE: 0.2
+    OBSIDIAN: 0.1
+    CRYING_OBSIDIAN: 0.2
+    AMETHYST_SHARD: 0.15
+    AMETHYST_BLOCK: 0.3
+    COPPER_INGOT: 0.05
+    RAW_COPPER: 0.04
+    RAW_IRON: 0.08
+    RAW_GOLD: 0.12
+    GLOW_INK_SAC: 0.15
+    COPPER_ORE: 0.1
+    DEEPSLATE_IRON_ORE: 0.25
+    DEEPSLATE_GOLD_ORE: 0.35
+    DEEPSLATE_DIAMOND_ORE: 0.6
+    DEEPSLATE_EMERALD_ORE: 0.5
+    DEEPSLATE_COAL_ORE: 0.15
+    DEEPSLATE_REDSTONE_ORE: 0.2
+    DEEPSLATE_LAPIS_ORE: 0.25
+    POINTED_DRIPSTONE: 0.05
+    MOSS_BLOCK: 0.05
+    AZALEA: 0.05
+    FLOWERING_AZALEA: 0.08
+    SPORE_BLOSSOM: 25.0
+    CAVE_VINES: 2.0
+    BIG_DRIPLEAF: 2.5
+    SMALL_DRIPLEAF: 1.5
+    GLOW_BERRIES: 3.0
+    DEEPSLATE: 1.0
+    TUFF: 1.0
+    CALCITE: 1.5
+    DRIPSTONE_BLOCK: 1.5
+    AXOLOTL_BUCKET: 50.0
+    GLOW_ITEM_FRAME: 15.0
+    SPYGLASS: 40.0
+    GOAT_HORN: 20.0
+    SCULK: 5.0
+    SCULK_CATALYST: 15.0
+    SCULK_SENSOR: 20.0
+    SCULK_SHRIEKER: 25.0
+    ECHO_SHARD: 50.0
+    RECOVERY_COMPASS: 100.0
+    MUD: 0.5
+    MUD_BRICKS: 1.0
+    PACKED_MUD: 0.8
+    MANGROVE_LOG: 1.0
+    MANGROVE_ROOTS: 0.5
+    MUDDY_MANGROVE_ROOTS: 0.8
+    FROGSPAWN: 10.0
+    OCHRE_FROGLIGHT: 30.0
+    VERDANT_FROGLIGHT: 30.0
+    PEARLESCENT_FROGLIGHT: 30.0
+    TADPOLE_BUCKET: 15.0
+    DISC_FRAGMENT_5: 40.0
+
+# ========================================
+#     Конфигурация плагина BuyerPlugin
+# ========================================
+
+# Настройки экономики
+economy:
+  # Тип экономики: "eco" или "money"
+  type: "eco"
+  
+# Настройки ротации ассортимента
+rotation:
+  # Включить ротацию ассортимента (true/false)
+  enabled: false
+  
+  # Время обновления в минутах
+  update-interval: 60
+  
+  # Рандомизировать ассортимент при старте плагина
+  randomize-on-start: false
+  
+  # Минимальное общее количество товаров в ассортименте
+  min-items: 15
+  
+  # Максимальное количество товаров в ассортименте
+  max-items: 30
+
+  # Настройка колебания цен при ротации (множитель от базовой цены в all-items)
+  price-fluctuation:
+    min: 0.7
+    max: 1.3
+
+# Настройки лимитов скупки
+limits:
+  # Включить лимиты на скупку (true/false)
+  enabled: false
+  
+  # Настройки отображения лимитов
+  display:
+    # Показывать лимит в лоре (true/false)
+    enabled: true
+    # Символ бесконечности
+    infinity-symbol: "∞"
+    # Цвет символа и текста бесконечности
+    infinity-color: "#00FF00"
+    # Формат строки лимита в лоре предмета (%limit% будет заменен на число или символ бесконечности)
+    format: "#AAAAAAЛимит: %limit%"
+  
+  # Лимиты для каждого предмета (сколько максимум скупает за раз)
+  # Укажите -1, если лимитов быть не должно
+  per-item:
+    DIAMOND: 64
+    EMERALD: 64
+    NETHERITE_INGOT: 16
+    GOLD_INGOT: 128
+    IRON_INGOT: 256
+    COAL: 512
+    WHEAT: 512
+    BEEF: 128
+    ROTTEN_FLESH: -1
+    BONE: -1
+    STRING: -1
+    GUNPOWDER: -1
+    # По умолчанию для всех остальных (-1 для отсутствия лимита)
+    default: -1
+
+# Настройки системы множителей
+multiplier:
+  # Включить систему множителей (true/false)
+  enabled: true
+  
+  # Максимальный уровень множителя
+  max-level: 10
+  
+  # Процент множителя за уровень (например, 10 = +10% за каждый уровень)
+  percent-per-level: 10
+  
+  # Требования для повышения уровня (количество проданных предметов)
+  level-requirements:
+    2: 100      # Для достижения уровня 2 нужно продать 100 предметов
+    3: 300      # Для уровня 3 - 300 предметов всего
+    4: 600
+    5: 1000
+    6: 1500
+    7: 2500
+    8: 4000
+    9: 6000
+    10: 10000
+
+# Настройки автопродажи
+auto-sell:
+  # Включить автопродажу (true/false)
+  enabled: true
+  
+  # Интервал автопродажи в секундах (как часто продаются предметы)
+  interval: 2
+  
+  # Продавать только определенные предметы (true) или все из ассортимента (false)
+  whitelist-mode: false
+  
+  # Показывать информацию об авто-скупке в лоре предметов, если авто-скупщик выключен
+  show-lore-when-disabled: false
+  
+  # Настройки отображения авто-скупки (Полная кастомизация)
+  display:
+    # Текст статуса в названии предмета (префикс)
+    prefix:
+      enabled: "#00FF00[✓] "
+      disabled: "#FF0000[✗] "
+      none: "" # Когда авто-скупщик выключен глобально
+    
+    # Формат в лоре предмета
+    lore:
+      enabled:
+        - ""
+        - "#00FF00[✓] #FFFFFFАвто-скупка"
+        - "#AAAAAA(Кликните, чтобы выключить)"
+      disabled:
+        - ""
+        - "#FF0000[✗] #FFFFFFАвто-скупка"
+        - "#AAAAAA(Кликните, чтобы включить)"
+  
+  # Список предметов для автопродажи (работает только при whitelist-mode: true)
+  whitelist:
+    - DIAMOND
+    - EMERALD
+    - GOLD_INGOT
+  
+  # Сообщение при автопродаже
+  message:
+    enabled: true
+    text: "#00FF00[Авто-скупщик] Продано %amount% предметов за %money% монет!"
+
+# Настройки меню
+menu:
+  # Название главного меню
+  main-title: "#00FF00Скупщик предметов"
+  
+  # Название меню ассортимента
+  catalog-title: "#FF0000Ассортимент"
+  
+  # Настройка отображения товаров в ассортименте
+  catalog-display:
+    # Сколько товаров показывать на странице (максимум 45)
+    items-per-page: 45
+    
+    # Сортировка товаров: "price" (по цене), "name" (по названию), "material" (по материалу)
+    sort-by: "price"
+    
+    # Порядок сортировки: "ascending" (по возрастанию), "descending" (по убыванию)
+    sort-order: "descending"
+    
+    # Показывать minecraft ID под описанием
+    show-minecraft-id: true
+  
+  # Декоративное стекло главного меню (слоты 36-44)
+  main-decorative-glass:
+    enabled: true
+    material: ORANGE_STAINED_GLASS_PANE
+    name: "#FF8800Оранжевая стеклянная панель"
+    lore:
+      - "#FFAAAAДекоративные блоки"
+  
+  # Декоративное стекло меню ассортимента (слоты 45-53)
+  catalog-decorative-glass:
+    enabled: true
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: "#00FFFFГолубая стеклянная панель"
+    lore:
+      - "#AAFFFFДекоративные блоки"
+
+# Настройки кнопок
+buttons:
+  # Кнопка магазина в главном меню
+  shop:
+    material: GOLD_INGOT
+    name: "#FFD700Магазин Скупщика"
+    lore:
+      - ""
+      - "#00FF00Ваши очки: #FFFF00%points%"
+      - ""
+      - "#FFFFAAНажмите, чтобы открыть магазин"
+  # Кнопка продажи
+  sell:
+    material: LIME_DYE
+    name: "#00FF00► Нажмите, чтобы сдать все предметы"
+    lore:
+      - "#00FF00и получить монеты за предметы"
+  
+  # Кнопка ассортимента
+  catalog:
+    material: WRITABLE_BOOK
+    name: "#FF0000Ассортимент"
+    lore:
+      - ""
+      - "#FFAAAAПосмотрите что скупает"
+      - "#FFAAAAТорговец и по какой цене!"
+      - ""
+  
+  # Кнопка информации
+  info:
+    material: COOKED_BEEF
+    name: "#FFAA00Информация"
+    lore:
+      - ""
+      - "#FFFFAAВы можете обменивать предметы на монеты"
+      - "#FFFFAAБолее ценные предметы стоят больше"
+      - ""
+  
+  # Кнопка автоскупщика
+  auto:
+    material: NETHER_STAR
+    name: "#FFFFFFАвто-скупщик"
+    lore:
+      - ""
+      - "#FFAAAAАвтоматическая продажа предметов"
+      - "#FFAAAAиз инвентаря через заданный интервал"
+  
+  # Кнопка "Назад"
+  back:
+    material: BARRIER
+    name: "#FF0000Назад"
+  
+  # Заполнители пустых слотов в нижней панели главного меню
+  filler:
+    # Слот 48
+    slot-48:
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+    # Слот 49
+    slot-49:
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+    # Слот 50
+    slot-50:
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+    # Слот 51
+    slot-51:
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+    # Слот 52
+    slot-52:
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+  
+  # Заполнители для меню ассортимента (слоты 45-53, кроме 49)
+  catalog-filler:
+    # Слот 45
+    slot-45:
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+      name: " "
+    # Слот 46
+    slot-46:
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+      name: " "
+    # Слот 47
+    slot-47:
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+      name: " "
+    # Слот 48
+    slot-48:
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+      name: " "
+    # Слот 49 - кнопка "Назад" (не заполняется)
+    # Слот 50
+    slot-50:
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+      name: " "
+    # Слот 51
+    slot-51:
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+      name: " "
+    # Слот 52
+    slot-52:
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+      name: " "
+    # Слот 53
+    slot-53:
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+      name: " "
+
+# Сообщения
+messages:
+  # Сообщение при успешной продаже
+  sell-success: "#00FF00Вы продали %amount% предметов за %money% монет!"
+  
+  # Сообщение когда нет предметов для продажи
+  no-items: "#FF0000У вас нет предметов для продажи!"
+  
+  # Сообщение только для игроков
+  players-only: "#FF0000Эта команда только для игроков!"
+  
+  # Сообщение при превышении лимита
+  limit-exceeded: "#FF0000Скупщик больше не принимает %item%! Лимит: %limit% шт."
+  
+  # Сообщение об обновлении ассортимента
+  rotation-update: "#00FF00Ассортимент обновлён!"
+  
+  # Сообщение о перезагрузке
+  reload-success: "#00FF00Конфигурация перезагружена!"
+  
+  # Сообщение о ротации
+  rotate-success: "#00FF00Ассортимент обновлён вручную!"
+  
+  # Сообщение о сбросе лимитов
+  reset-success: "#00FF00Лимиты сброшены!"
+
+
+  #/buyer clearmultipliers
+  # Сообщение об очистке множителей
+  clear-multipliers-success: "#00FF00База данных множителей очищена!"
+
+# Русские названия предметов
+item-names:
+  # Драгоценности и слитки
+  DIAMOND: "Алмаз"
+  EMERALD: "Изумруд"
+  NETHERITE_INGOT: "Незеритовый слиток"
+  NETHERITE_SCRAP: "Незеритовый обломок"
+  GOLD_INGOT: "Золотой слиток"
+  IRON_INGOT: "Железный слиток"
+  COAL: "Уголь"
+  
+  # Пыль и редстоун
+  REDSTONE: "Красная пыль"
+  LAPIS_LAZULI: "Лазурит"
+  QUARTZ: "Кварц"
+  GLOWSTONE_DUST: "Светящаяся пыль"
+  GUNPOWDER: "Порох"
+  
+  # Сельское хозяйство
+  WHEAT: "Пшеница"
+  CARROT: "Морковь"
+  POTATO: "Картофель"
+  BEETROOT: "Свёкла"
+  APPLE: "Яблоко"
+  MELON_SLICE: "Ломтик арбуза"
+  PUMPKIN: "Тыква"
+  SUGAR_CANE: "Сахарный тростник"
+  CACTUS: "Кактус"
+  BAMBOO: "Бамбук"
+  KELP: "Ламинария"
+  SEA_PICKLE: "Морской огурец"
+  SWEET_BERRIES: "Сладкие ягоды"
+  COCOA_BEANS: "Какао-бобы"
+  BROWN_MUSHROOM: "Коричневый гриб"
+  RED_MUSHROOM: "Красный гриб"
+  NETHER_WART: "Адский нарост"
+  BAKED_POTATO: "Жареный картофель"
+  BREAD: "Хлеб"
+  COOKIE: "Печенье"
+  PUMPKIN_PIE: "Тыквенный пирог"
+  MUSHROOM_STEW: "Тушёные грибы"
+  BEETROOT_SOUP: "Свекольный суп"
+  RABBIT_STEW: "Тушёный кролик"
+  HONEY_BOTTLE: "Бутылка мёда"
+  CHORUS_FRUIT: "Плод хоруса"
+  ENCHANTED_GOLDEN_APPLE: "Зачарованное золотое яблоко"
+  GOLDEN_APPLE: "Золотое яблоко"
+  GOLDEN_CARROT: "Золотая морковь"
+  PUFFERFISH: "Иглобрюх"
+  TROPICAL_FISH: "Тропическая рыба"
+  
+  # Сырое мясо
+  BEEF: "Сырая говядина"
+  PORKCHOP: "Сырая свинина"
+  CHICKEN: "Сырая курятина"
+  MUTTON: "Сырая баранина"
+  RABBIT: "Сырая крольчатина"
+  
+  # Приготовленное мясо
+  COOKED_BEEF: "Жареная говядина"
+  COOKED_PORKCHOP: "Жареная свинина"
+  COOKED_CHICKEN: "Жареная курятина"
+  COOKED_MUTTON: "Жареная баранина"
+  COOKED_RABBIT: "Жареная крольчатина"
+  
+  # Рыба
+  COD: "Сырая треска"
+  SALMON: "Сырой лосось"
+  TROPICAL_FISH: "Тропическая рыба"
+  PUFFERFISH: "Иглобрюх"
+  COOKED_COD: "Жареная треска"
+  COOKED_SALMON: "Жареный лосось"
+  
+  # Материалы животных
+  LEATHER: "Кожа"
+  FEATHER: "Перо"
+  STRING: "Нить"
+  WOOL: "Шерсть"
+  BONE: "Кость"
+  RABBIT_HIDE: "Кроличья шкура"
+  RABBIT_FOOT: "Кроличья лапка"
+  EGG: "Яйцо"
+  INK_SAC: "Чернильный мешок"
+  
+  # Зелья и ингредиенты
+  BLAZE_ROD: "Огненный стержень"
+  BLAZE_POWDER: "Огненный порошок"
+  ENDER_PEARL: "Жемчуг Края"
+  GHAST_TEAR: "Слеза гаста"
+  NETHER_STAR: "Звезда Нижнего мира"
+  MAGMA_CREAM: "Лавовый крем"
+  SLIME_BALL: "Слизь"
+  SPIDER_EYE: "Паучий глаз"
+  FERMENTED_SPIDER_EYE: "Ферментированный паучий глаз"
+  PHANTOM_MEMBRANE: "Мембрана фантома"
+  
+  # Древесина
+  OAK_LOG: "Дубовое бревно"
+  SPRUCE_LOG: "Еловое бревно"
+  BIRCH_LOG: "Берёзовое бревно"
+  JUNGLE_LOG: "Тропическое бревно"
+  ACACIA_LOG: "Акациевое бревно"
+  DARK_OAK_LOG: "Тёмно-дубовое бревно"
+  CRIMSON_STEM: "Багровая ножка"
+  WARPED_STEM: "Искажённая ножка"
+  
+  # Руды
+  IRON_ORE: "Железная руда"
+  GOLD_ORE: "Золотая руда"
+  DIAMOND_ORE: "Алмазная руда"
+  COAL_ORE: "Угольная руда"
+  REDSTONE_ORE: "Руда красного камня"
+  LAPIS_ORE: "Лазуритовая руда"
+  EMERALD_ORE: "Изумрудная руда"
+  NETHER_QUARTZ_ORE: "Кварцевая руда Нижнего мира"
+  NETHER_GOLD_ORE: "Золотая руда Нижнего мира"
+  ANCIENT_DEBRIS: "Древние обломки"
+  
+  # Nether предметы
+  CRIMSON_FUNGUS: "Багровый гриб"
+  WARPED_FUNGUS: "Искажённый гриб"
+  CRIMSON_ROOTS: "Багровые корни"
+  WARPED_ROOTS: "Искажённые корни"
+  SHROOMLIGHT: "Светогриб"
+  WARPED_WART_BLOCK: "Блок искажённых наростов"
+  
+  # Другое
+  PRISMARINE_SHARD: "Осколок призмарина"
+  PRISMARINE_CRYSTALS: "Кристаллы призмарина"
+  NAUTILUS_SHELL: "Раковина наутилуса"
+  SCUTE: "Щиток"
+  HEART_OF_THE_SEA: "Сердце моря"
+  HONEYCOMB: "Соты"
+  HONEY_BOTTLE: "Бутылка мёда"
+  OBSIDIAN: "Обсидиан"
+  CRYING_OBSIDIAN: "Плачущий обсидиан"
+  AMETHYST_SHARD: "Осколок аметиста"
+  AMETHYST_BLOCK: "Аметистовый блок"
+  COPPER_INGOT: "Медный слиток"
+  RAW_COPPER: "Сырая медь"
+  RAW_IRON: "Сырое железо"
+  RAW_GOLD: "Сырое золото"
+  GLOW_INK_SAC: "Светящийся чернильный мешок"
+  COPPER_ORE: "Медная руда"
+  DEEPSLATE_IRON_ORE: "Глубинная железная руда"
+  DEEPSLATE_GOLD_ORE: "Глубинная золотая руда"
+  DEEPSLATE_DIAMOND_ORE: "Глубинная алмазная руда"
+  DEEPSLATE_EMERALD_ORE: "Глубинная изумрудная руда"
+  DEEPSLATE_COAL_ORE: "Глубинная угольная руда"
+  DEEPSLATE_REDSTONE_ORE: "Глубинная редстоуновая руда"
+  DEEPSLATE_LAPIS_ORE: "Глубинная лазуритовая руда"
+  POINTED_DRIPSTONE: "Капельник"
+  MOSS_BLOCK: "Блок мха"
+  AZALEA: "Азалия"
+  FLOWERING_AZALEA: "Цветущая азалия"
+  SPORE_BLOSSOM: "Спороцвет"
+  CAVE_VINES: "Пещерные лозы"
+  BIG_DRIPLEAF: "Большой твердолист"
+  SMALL_DRIPLEAF: "Малый твердолист"
+  GLOW_BERRIES: "Светящиеся ягоды"
+  COBWEB: "Паутина"
+  RAIL: "Рельсы"
+  POWERED_RAIL: "Энергорельсы"
+  DETECTOR_RAIL: "Рельсы с датчиком"
+  ACTIVATOR_RAIL: "Активирующие рельсы"
+  MINECART: "Вагонетка"
+  CHEST_MINECART: "Грузовая вагонетка"
+  FURNACE_MINECART: "Самоходная вагонетка"
+  TNT_MINECART: "Вагонетка с ТНТ"
+  HOPPER_MINECART: "Загрузочная вагонетка"
+
+# Все доступные товары и цены
+all-items:
+  # Драгоценности и слитки
+  DIAMOND: 50.0
+  EMERALD: 40.0
+  NETHERITE_INGOT: 100.0
+  NETHERITE_SCRAP: 30.0
+  GOLD_INGOT: 30.0
+  IRON_INGOT: 10.0
+  COAL: 5.0
+  
+  # Пыль и редстоун
+  REDSTONE: 8.0
+  LAPIS_LAZULI: 12.0
+  QUARTZ: 6.0
+  GLOWSTONE_DUST: 4.0
+  GUNPOWDER: 6.0
+  
+  # Сельское хозяйство
+  WHEAT: 2.0
+  CARROT: 2.5
+  POTATO: 2.5
+  BEETROOT: 2.0
+  APPLE: 3.0
+  MELON_SLICE: 1.5
+  PUMPKIN: 4.0
+  SUGAR_CANE: 1.5
+  CACTUS: 2.0
+  BAMBOO: 1.0
+  KELP: 1.0
+  SEA_PICKLE: 2.5
+  SWEET_BERRIES: 2.0
+  COCOA_BEANS: 3.0
+  BROWN_MUSHROOM: 2.0
+  RED_MUSHROOM: 2.0
+  NETHER_WART: 5.0
+  BAKED_POTATO: 4.0
+  BREAD: 5.0
+  COOKIE: 2.0
+  PUMPKIN_PIE: 10.0
+  MUSHROOM_STEW: 8.0
+  BEETROOT_SOUP: 8.0
+  RABBIT_STEW: 15.0
+  CHORUS_FRUIT: 12.0
+  ENCHANTED_GOLDEN_APPLE: 500.0
+  GOLDEN_APPLE: 50.0
+  GOLDEN_CARROT: 15.0
+  
+  # Сырое мясо
+  BEEF: 6.0
+  PORKCHOP: 6.0
+  CHICKEN: 4.0
+  MUTTON: 5.0
+  RABBIT: 4.5
+  
+  # Приготовленное мясо
+  COOKED_BEEF: 9.0
+  COOKED_PORKCHOP: 9.0
+  COOKED_CHICKEN: 6.0
+  COOKED_MUTTON: 7.5
+  COOKED_RABBIT: 6.5
+  
+  # Рыба
+  COD: 3.0
+  SALMON: 4.0
+  TROPICAL_FISH: 5.0
+  PUFFERFISH: 3.5
+  COOKED_COD: 5.0
+  COOKED_SALMON: 6.5
+  
+  # Материалы животных
+  LEATHER: 8.0
+  FEATHER: 3.0
+  STRING: 2.0
+  WOOL: 2.0
+  BONE: 4.0
+  RABBIT_HIDE: 3.5
+  RABBIT_FOOT: 8.0
+  EGG: 1.5
+  INK_SAC: 3.0
+  
+  # Зелья и ингредиенты
+  BLAZE_ROD: 15.0
+  BLAZE_POWDER: 8.0
+  ENDER_PEARL: 20.0
+  GHAST_TEAR: 25.0
+  NETHER_STAR: 500.0
+  MAGMA_CREAM: 8.0
+  SLIME_BALL: 7.0
+  SPIDER_EYE: 4.0
+  FERMENTED_SPIDER_EYE: 6.0
+  PHANTOM_MEMBRANE: 12.0
+  
+  # Древесина
+  OAK_LOG: 1.0
+  SPRUCE_LOG: 1.0
+  BIRCH_LOG: 1.0
+  JUNGLE_LOG: 1.5
+  ACACIA_LOG: 1.0
+  DARK_OAK_LOG: 1.5
+  CRIMSON_STEM: 3.0
+  WARPED_STEM: 3.0
+  
+  # Руды
+  IRON_ORE: 15.0
+  GOLD_ORE: 40.0
+  DIAMOND_ORE: 75.0
+  COAL_ORE: 8.0
+  REDSTONE_ORE: 12.0
+  LAPIS_ORE: 18.0
+  EMERALD_ORE: 60.0
+  NETHER_QUARTZ_ORE: 10.0
+  NETHER_GOLD_ORE: 35.0
+  ANCIENT_DEBRIS: 150.0
+  
+  # Nether предметы (1.16+)
+  CRIMSON_FUNGUS: 3.0
+  WARPED_FUNGUS: 3.0
+  CRIMSON_ROOTS: 1.5
+  WARPED_ROOTS: 1.5
+  SHROOMLIGHT: 5.0
+  WARPED_WART_BLOCK: 4.0
+  
+  # Океан и другое
+  PRISMARINE_SHARD: 8.0
+  PRISMARINE_CRYSTALS: 10.0
+  NAUTILUS_SHELL: 15.0
+  SCUTE: 12.0
+  HEART_OF_THE_SEA: 100.0
+  HONEYCOMB: 6.0
+  HONEY_BOTTLE: 8.0
+
+  # Новые предметы (1.17+)
+  OBSIDIAN: 10.0
+  CRYING_OBSIDIAN: 20.0
+  AMETHYST_SHARD: 15.0
+  AMETHYST_BLOCK: 40.0
+  COPPER_INGOT: 5.0
+  RAW_COPPER: 4.0
+  RAW_IRON: 8.0
+  RAW_GOLD: 12.0
+  GLOW_INK_SAC: 15.0
+  COPPER_ORE: 10.0
+  DEEPSLATE_IRON_ORE: 25.0
+  DEEPSLATE_GOLD_ORE: 35.0
+  DEEPSLATE_DIAMOND_ORE: 100.0
+  DEEPSLATE_EMERALD_ORE: 80.0
+  DEEPSLATE_COAL_ORE: 12.0
+  DEEPSLATE_REDSTONE_ORE: 18.0
+  DEEPSLATE_LAPIS_ORE: 25.0
+  POINTED_DRIPSTONE: 2.0
+  MOSS_BLOCK: 3.0
+  AZALEA: 2.0
+  FLOWERING_AZALEA: 4.0
+  SPORE_BLOSSOM: 25.0
+  CAVE_VINES: 1.5
+  BIG_DRIPLEAF: 2.0
+  SMALL_DRIPLEAF: 1.0
+  GLOW_BERRIES: 3.0
+  COBWEB: 5.0
+  RAIL: 2.0
+  POWERED_RAIL: 8.0
+  DETECTOR_RAIL: 6.0
+  ACTIVATOR_RAIL: 6.0
+  MINECART: 15.0
+  CHEST_MINECART: 20.0
+  FURNACE_MINECART: 20.0
+  TNT_MINECART: 40.0
+  HOPPER_MINECART: 35.0
+
+# Текущий активный ассортимент (автоматически обновляется)
+items:
+  DIAMOND: 50.0
+  EMERALD: 40.0
+  NETHERITE_INGOT: 100.0
+  GOLD_INGOT: 30.0
+  IRON_INGOT: 10.0
+  COAL: 5.0
+  WHEAT: 2.0
+  BEEF: 6.0
+  BLAZE_ROD: 15.0
+  ENDER_PEARL: 20.0
+  OAK_LOG: 1.0
+  SPRUCE_LOG: 1.0
+  OBSIDIAN: 10.0
+  REDSTONE: 8.0
+  LAPIS_LAZULI: 12.0

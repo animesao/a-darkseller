@@ -1,0 +1,17 @@
+name: A-DarkSeller
+version: 1.4.1
+main: com.buyerplugin.Main
+api-version: 1.16
+authors: [animesao]
+description: DarkSeller plugin for Minecraft 1.16.5
+
+commands:
+  buyer:
+    description: Open buyer menu
+    usage: /<command> [reload|rotate|reset]
+    aliases: [seller, скупщик]
+
+permissions:
+  buyer.admin:
+    description: Admin permissions for DarkSeller
+    default: op

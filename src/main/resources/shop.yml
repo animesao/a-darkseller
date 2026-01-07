@@ -1,0 +1,109 @@
+title: "#FFD700Магазин Скупщика"
+size: 45
+
+# Декоративное оформление магазина
+decoration:
+  enabled: true
+  fillers:
+    - slots: [0, 1, 2, 3, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
+      material: "GRAY_STAINED_GLASS_PANE"
+      name: " "
+    - slots: [4]
+      material: "PLAYER_HEAD"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmZlZDRhYmE0NmI3M2I0YWI0MjgzNzVjYjE0Zjg2ZGRlOTNhZWEyY2E3MDM1YzcyYjU2YmFhZjU1Mjc3In19fQ=="
+      name: "#FFD700Ваш баланс: #00FF00%points% очков"
+      lore:
+        - ""
+        - "#FFFFAAСдавайте предметы, чтобы"
+        - "#FFFFAAзаработать очки скупщика"
+
+messages:
+  buy-success: "&aВы успешно купили товар!"
+  no-points: "&cНедостаточно очков скупщика!"
+
+items:
+  item1:
+    slot: 11
+    material: "DIAMOND_SWORD"
+    name: "#00FFFFМеч Победителя"
+    cost: 100.0
+    lore:
+      - ""
+      - "#FFFF00Цена: #00FF00%cost% очков"
+      - ""
+      - "#FFFFAAНажмите, чтобы купить"
+    commands:
+      - "give %player% diamond_sword 1"
+  item2:
+    slot: 13
+    material: "GOLDEN_APPLE"
+    name: "#FFFF00Золотое Яблоко"
+    cost: 50.0
+    lore:
+      - ""
+      - "#FFFF00Цена: #00FF00%cost% очков"
+      - ""
+      - "#FFFFAAНажмите, чтобы купить"
+    commands:
+      - "give %player% golden_apple 1"
+  item3:
+    slot: 15
+    material: "NETHERITE_INGOT"
+    name: "#8B4513Незеритовый Слиток"
+    cost: 200.0
+    lore:
+      - ""
+      - "#FFFF00Цена: #00FF00%cost% очков"
+      - ""
+      - "#FFFFAAНажмите, чтобы купить"
+    commands:
+      - "give %player% netherite_ingot 1"
+  item4:
+    slot: 19
+    material: "NETHERITE_PICKAXE"
+    name: "#8B4513Кирка Разрушителя"
+    cost: 300.0
+    lore:
+      - ""
+      - "#FFFF00Цена: #00FF00%cost% очков"
+      - ""
+      - "#FFFFAAНажмите, чтобы купить"
+    commands:
+      - "give %player% netherite_pickaxe 1"
+  item5:
+    slot: 21
+    material: "TOTEM_OF_UNDYING"
+    name: "#FFD700Тотем Бессмертия"
+    cost: 500.0
+    lore:
+      - ""
+      - "#FFFF00Цена: #00FF00%cost% очков"
+      - ""
+      - "#FFFFAAНажмите, чтобы купить"
+    commands:
+      - "give %player% totem_of_undying 1"
+  item6:
+    slot: 23
+    material: "ELYTRA"
+    name: "#FFFFFFЭлитры"
+    cost: 1000.0
+    lore:
+      - ""
+      - "#FFFF00Цена: #00FF00%cost% очков"
+      - ""
+      - "#FFFFAAНажмите, чтобы купить"
+    commands:
+      - "give %player% elytra 1"
+  item7:
+    slot: 25
+    material: "PLAYER_HEAD"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTcyMjIwZjU0M2E2OTJhM2YyZjk0OWViMmE1MzQzNDk1NjEwMjY0ZTkxNmIxOWI3NzNjN2U0ZDIxYjg1ZDRjNyJ9fX0="
+    name: "#FFD700Супер-Голова"
+    cost: 50.0
+    lore:
+      - ""
+      - "#FFFF00Цена: #00FF00%cost% очков"
+      - ""
+      - "#FFFFAAНажмите, чтобы купить"
+    commands:
+      - "give %player% player_head{SkullOwner:\"SuperHead\"} 1"

@@ -71,5 +71,3 @@ BuyerAPI.setAutoSell(player.getUniqueId(), true);
 | `getActiveAssortment()` | Возвращает Map со всеми предметами в скупе и их ценами |
 | `getItemPrice(Material)` | Возвращает цену за 1 шт. указанного материала |
 | `isAutoSellEnabled(UUID)` | Проверяет, включена ли авто-продажа у игрока |
-# a-darkseller
-# a-darkseller

@@ -1,6 +1,6 @@
 # A-DarkSeller - Скупщик для вашего сервера
 
-# сайт: [сайт вики](https://alfheimguide.ct.ws/wiki_article?slug=a-darkseller)
+# сайт: [сайт вики](https://alfheimguide.spcfy.eu/wiki_article.php?slug=a-darkseller)
 
 Профессиональный плагин на скупщика для Minecraft серверов (Spigot/Bukkit 1.16.5+).
 
